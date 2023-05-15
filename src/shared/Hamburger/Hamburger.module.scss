@@ -1,0 +1,24 @@
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 4px;
+
+  .line {
+    background-color: #fff;
+    height: 2px;
+    border-radius: 1.5px;
+
+    &:first-child {
+      width: 14px;
+    }
+
+    &:nth-child(2) {
+      width: 20px;
+    }
+
+    &:last-child {
+      width: 10px;
+    }
+  }
+}

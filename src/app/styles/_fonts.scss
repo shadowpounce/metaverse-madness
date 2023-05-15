@@ -1,0 +1,5 @@
+@import 'mixins';
+
+@include fontCreate($eudoxus, 400, '/fonts/EudoxusSans-Regular', false);
+@include fontCreate($eudoxus, 700, '/fonts/EudoxusSans-Bold', false);
+@include fontCreate($eudoxus, 800, '/fonts/EudoxusSans-ExtraBold', false);

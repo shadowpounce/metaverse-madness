@@ -1,0 +1,19 @@
+@mixin fontCreate($name, $weight, $url, $ttf: true, $style: normal) {
+  @font-face {
+    font-family: $name;
+    font-weight: $weight;
+    font-style: $style;
+    font-display: swap;
+    @if $ttf {
+      src: url('#{$url}.woff2') format('woff2'),
+        url('#{$url}.woff') format('woff'),
+        url('#{$url}.ttf') format('truetype'),
+        url('#{$url}.eot') format('embedded-opentype');
+    } @else {
+      src: url('#{$url}.woff2') format('woff2'),
+        url('#{$url}.woff') format('woff'),
+        url('#{$url}.otf') format('opentype'),
+        url('#{$url}.eot') format('embedded-opentype');
+    }
+  }
+}

@@ -1,0 +1,61 @@
+body {
+  font-family: $eudoxus;
+
+  color: #fff;
+  background-color: $bg;
+}
+
+h1,
+h2 {
+  letter-spacing: -0.02em;
+}
+
+h1 {
+  font-size: 144px;
+  line-height: 110%;
+}
+
+h2 {
+  font-size: 64px;
+  line-height: 130%;
+}
+
+h3 {
+  font-size: 42px;
+  font-weight: 400;
+  line-height: 125%;
+}
+
+p {
+}
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+
+  margin: 0 auto;
+}
+
+.section-span {
+  color: $gray;
+
+  opacity: 0.5;
+
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -0.02em;
+
+  display: flex;
+  align-items: center;
+  gap: 4px;
+
+  &::before {
+    content: '';
+    display: block;
+
+    width: 2px;
+    height: 12px;
+
+    background-color: $gray;
+  }
+}

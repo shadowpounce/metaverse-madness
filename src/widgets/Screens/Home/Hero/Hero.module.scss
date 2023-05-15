@@ -1,0 +1,15 @@
+.hero {
+  .row {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+
+    padding-top: 140px;
+  }
+
+  .socialLinks {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+}
