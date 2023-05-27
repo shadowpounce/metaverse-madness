@@ -1,0 +1,20 @@
+.world {
+  div[class='gradient'] {
+    top: -25%;
+    width: 35%;
+  }
+
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    h2 {
+      width: 75%;
+      text-align: center;
+
+      margin-bottom: 50px;
+    }
+  }
+}

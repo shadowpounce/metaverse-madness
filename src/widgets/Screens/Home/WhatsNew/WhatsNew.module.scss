@@ -1,0 +1,32 @@
+.whatsNew {
+  h2 {
+    margin-bottom: 48px;
+  }
+
+  div[class='gradient'] {
+    right: 0;
+    width: 50%;
+  }
+
+  .list {
+    display: flex;
+    gap: 46px;
+
+    li {
+      span {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 30px;
+        color: #ffffff;
+
+        margin: 24px 0 16px;
+        display: block;
+      }
+
+      p {
+        color: $gray-2;
+        line-height: 180%;
+      }
+    }
+  }
+}

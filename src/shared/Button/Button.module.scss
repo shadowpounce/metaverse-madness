@@ -1,0 +1,18 @@
+.button {
+  background-color: $btn;
+  color: #fff;
+
+  padding: 22px 32px;
+
+  border-radius: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 12px;
+
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.005em;
+}

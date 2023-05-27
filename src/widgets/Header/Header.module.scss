@@ -1,6 +1,15 @@
 .header {
   padding: 35px 0;
 
+  div[class='gradient'] {
+    top: 0;
+    left: 50%;
+
+    translate: -50% -45%;
+
+    width: 60%;
+  }
+
   div[class='container'] {
     display: flex;
     align-items: center;
