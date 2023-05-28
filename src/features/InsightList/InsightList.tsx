@@ -19,15 +19,14 @@ export const InsightList = () => {
 
   return (
     <div className={styles.insightList}>
-      {data &&
-        data.map((insight: IInsight) => (
-          <Insight
-            key={insight.title}
-            img={insight.thumbnail}
-            title={insight.title}
-            subtitle={insight.subtitle}
-          />
-        ))}
+      {data.map((insight: IInsight) => (
+        <Insight
+          key={insight.title}
+          img={insight.thumbnail}
+          title={insight.title}
+          subtitle={insight.subtitle}
+        />
+      ))}
     </div>
   )
 }

@@ -2,7 +2,7 @@ import styles from './ArrowButton.module.scss'
 
 export const ArrowButton = () => {
   return (
-    <div className={styles.arrowButton}>
+    <button className={styles.arrowButton}>
       <svg
         width="100"
         height="100"
@@ -18,6 +18,6 @@ export const ArrowButton = () => {
           strokeWidth="0.3"
         />
       </svg>
-    </div>
+    </button>
   )
 }

@@ -24,16 +24,15 @@ export const WorldSlider = () => {
 
   return (
     <div className={styles.worldSlider}>
-      {data &&
-        data.map((world: IWorld, idx: number) => (
-          <WorldSlide
-            key={idx}
-            onClick={() => toggleSlide(idx)}
-            active={idx === activeSlide && true}
-            thumbnail={world.thumbnail}
-            name={world.name}
-          />
-        ))}
+      {data.map((world: IWorld, idx: number) => (
+        <WorldSlide
+          key={idx}
+          onClick={() => toggleSlide(idx)}
+          active={idx === activeSlide && true}
+          thumbnail={world.thumbnail}
+          name={world.name}
+        />
+      ))}
     </div>
   )
 }

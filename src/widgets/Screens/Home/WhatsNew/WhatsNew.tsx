@@ -1,3 +1,4 @@
+import { PlanetModel } from '../../../../entities/PlanetModel/PlanetModel'
 import styles from './WhatsNew.module.scss'
 import { newThings } from './data'
 
@@ -24,7 +25,9 @@ export const WhatsNew = () => {
               ))}
             </ul>
           </div>
-          <div className="wrap"></div>
+          <div className="wrap">
+            <PlanetModel direction="right" />
+          </div>
         </div>
       </div>
     </section>

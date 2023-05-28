@@ -44,11 +44,14 @@ section {
 
 .wrapper {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: space-between;
 
+  gap: 100px;
+
   .wrap {
-    flex: 1;
+    flex: 1 1 0;
+    height: auto;
   }
 }
 
@@ -113,5 +116,29 @@ section {
     height: 12px;
 
     background-color: $gray;
+  }
+}
+
+.reveal {
+  opacity: 0;
+
+  .left {
+    translate: 0 -50%;
+  }
+
+  .right {
+    translate: 0 50%;
+  }
+
+  .bottom {
+    translate: 50% 0;
+  }
+
+  .top {
+    translate: -50% 0;
+  }
+
+  .scale {
+    scale: 0.5;
   }
 }

@@ -1,0 +1,48 @@
+.planetModel {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+
+  .model {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    translate: -50% -50%;
+
+    z-index: 1;
+
+    width: 100%;
+    height: 100%;
+  }
+
+  &.right {
+    .flat {
+      border-radius: 195px 160px 240px 180px;
+
+      rotate: 180deg;
+    }
+  }
+
+  &.left {
+    .flat {
+      border-radius: 195px 160px 240px 180px;
+    }
+  }
+
+  .flat {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(24px);
+
+    width: 100%;
+    height: 275px;
+
+    align-self: end;
+  }
+}
